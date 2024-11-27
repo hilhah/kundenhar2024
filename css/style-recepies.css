@@ -1,0 +1,24 @@
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'hd hd'
+    'nav nav'
+    'main main'
+    'sec sec'
+    'ft ft';
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 10rem 3rem 25rem 20rem 7rem;
+}
+
+
+section {
+    grid-area: sec;
+    background: gold;
+    display: grid;
+    grid-template-areas: 
+    'i1 i2 i3 i4'
+    '15 16 17 18'
+    'i9 i10 i11 i12';
+}
+

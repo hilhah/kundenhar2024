@@ -1,0 +1,44 @@
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'hd hd'
+    'nav nav'
+    'sec aside'
+    'main main'
+    'ft ft';
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 10rem 3rem 20rem 25rem 7rem;
+}
+
+header {
+    grid-area: hd;
+    background: pink;
+
+}
+
+nav {
+    grid-area: nav;
+    background: red;
+}
+
+section {
+    grid-area: sec;
+    background: blue;
+}
+
+aside {
+    grid-area: aside;
+    background: green;
+}
+
+main {
+    grid-area: main;
+    background: purple;
+}
+
+footer {
+    grid-area: ft;
+    background: white;
+
+}

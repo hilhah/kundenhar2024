@@ -1,0 +1,42 @@
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'hd hd'
+    'nav nav'
+    'aside main'
+    'aside sec'
+    'ft ft';
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 10rem 3rem 25rem 20rem 7rem;
+}
+
+header {
+    grid-area: hd;
+    background: rgb(123, 60, 60);
+}
+
+nav {
+    grid-area: nav;
+    background: yellow;
+}
+
+aside {
+    grid-area: aside;
+    background: greenyellow
+}
+
+main {
+    grid-area: main;
+    background: darkcyan
+}
+
+section {
+    grid-area: sec;
+    background: blueviolet
+}
+
+footer {
+    grid-area: ft;
+    background: turquoise;
+}

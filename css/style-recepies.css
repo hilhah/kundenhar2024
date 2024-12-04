@@ -4,21 +4,93 @@
     grid-template-areas: 
     'hd hd'
     'nav nav'
-    'main main'
+    'main as'
     'sec sec'
     'ft ft';
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 70% 1fr;
     grid-template-rows: 10rem 3rem 25rem 20rem 7rem;
 }
 
+header {
+    grid-area: hd;
+    background: firebrick;
+    display: flex;
+    justify-content: center;
+}
 
+nav {
+    grid-area: nav;
+    background: green;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    grid-area: main;
+    background: blue;
+}
+
+aside {
+    grid-area: as;
+    background: silver;
+}
 section {
     grid-area: sec;
     background: gold;
     display: grid;
     grid-template-areas: 
     'i1 i2 i3 i4'
-    '15 16 17 18'
-    'i9 i10 i11 i12';
+    'i5 i6 i7 i8';
+    gap: 5px; 
+}
+
+section img {
+    height: 100%;
+    width: 100%;
+}
+
+#image1 {
+    grid-area: i1;
+    object-fit: fill;
+}
+
+#image2 {
+    grid-area: i2;
+    object-fit: fill;
+}
+
+#image3 {
+    grid-area: i3;
+    object-fit: fill;
+}
+#image4 {
+    grid-area: i4;
+    object-fit: fill;
+}
+
+#image5 {
+    grid-area: i5;
+    object-fit: fill;
+}
+
+#image6 {
+    grid-area: i6;
+    object-fit: fill;
+}
+
+#image7 {
+    grid-area: i7;
+    object-fit: fill;
+}
+
+#image8 {
+    grid-area: i8;
+    object-fit: fill;
+}
+
+
+footer {
+    grid-area: ft;
+    background: pink;
 }
 

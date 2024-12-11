@@ -1,3 +1,7 @@
+body {
+    background-color: #f39c12;
+}
+
 #container {
     display: grid;
     height: 100vh;
@@ -8,40 +12,70 @@
     'sec sec'
     'ft ft';
     grid-template-columns: 70% 1fr;
-    grid-template-rows: 10rem 3rem 25rem 20rem 7rem;
+    grid-template-rows: 10rem 3rem 25rem 40rem 7rem;
 }
 
 header {
     grid-area: hd;
-    background: firebrick;
+    background: #e67e22;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav {
     grid-area: nav;
-    background: green;
+    background: #e67e22;
     display: flex;
     justify-content: space-around;
+
+}
+
+nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #e67e22;
+    color: rgb(0, 0, 0);
 }
 
 main {
     grid-area: main;
-    background: blue;
+    background: #e67e22;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 aside {
     grid-area: as;
-    background: silver;
+    background: #e67e22;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 section {
     grid-area: sec;
-    background: gold;
     display: grid;
     grid-template-areas: 
     'i1 i2 i3 i4'
-    'i5 i6 i7 i8';
-    gap: 5px; 
+    't1 t2 t3 t4'
+    'i5 i6 i7 i8'
+    't5 t6 t7 t8';
+    gap: 10px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25% 15% 25% 15%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    
 }
 
 section img {
@@ -52,45 +86,53 @@ section img {
 #image1 {
     grid-area: i1;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 #image2 {
     grid-area: i2;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 #image3 {
     grid-area: i3;
     object-fit: fill;
+    border-radius: 5px;
 }
 #image4 {
     grid-area: i4;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 #image5 {
     grid-area: i5;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 #image6 {
     grid-area: i6;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 #image7 {
     grid-area: i7;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 #image8 {
     grid-area: i8;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 
 footer {
     grid-area: ft;
-    background: pink;
+    background: #e67e22;
 }
 

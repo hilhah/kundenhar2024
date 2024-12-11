@@ -1,3 +1,7 @@
+body {
+    background-color: #f5f5f5;
+}
+
 #container {
     display: grid;
     height: 100vh;
@@ -16,26 +20,50 @@ header {
     background: rgb(123, 60, 60);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav {
     grid-area: nav;
     background: yellow;
+    display: flex;
+}
+
+nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: darkgoldenrod;
 }
 
 aside {
     grid-area: aside;
-    background: greenyellow
+    background: greenyellow;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
 }
 
 main {
     grid-area: main;
-    background: darkcyan
+    background: darkcyan;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 section {
     grid-area: sec;
-    background: blueviolet
+    background: blueviolet;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 footer {

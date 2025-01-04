@@ -1,5 +1,5 @@
 body {
-    background-color: #f39c12;
+    background-color: #e67e22;
 }
 
 #container {
@@ -8,16 +8,19 @@ body {
     grid-template-areas: 
     'hd hd'
     'nav nav'
+    'div1 div1'
     'main as'
+    'div2 div2'
     'sec sec'
     'ft ft';
-    grid-template-columns: 70% 1fr;
-    grid-template-rows: 10rem 3rem 25rem 40rem 7rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem 3rem 3rem 25rem 5rem 40rem 7rem;
+    column-gap: 5px;
 }
 
 header {
     grid-area: hd;
-    background: #e67e22;
+    background: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +28,7 @@ header {
 
 nav {
     grid-area: nav;
-    background: #e67e22;
+    background: white;
     display: flex;
     justify-content: space-around;
 
@@ -40,13 +43,31 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e67e22;
+    background-color: lightgray;
     color: rgb(0, 0, 0);
 }
 
+#rec {
+    background-color: lightgray;
+}
+
+#div1 {
+    grid-area: div1;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+#div2 {
+    grid-area: div2;
+    background-color: lightgray;
+    border-radius: 5px;
+    border-style: solid;
+    
+}
 main {
     grid-area: main;
-    background: #e67e22;
+    background: lightgray;
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -54,85 +75,45 @@ main {
 
 aside {
     grid-area: as;
-    background: #e67e22;
+    background: lightgray;
     border-radius: 10px;
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 5px;
+    border-style: solid;
 }
 section {
     grid-area: sec;
     display: grid;
-    grid-template-areas: 
-    'i1 i2 i3 i4'
-    't1 t2 t3 t4'
-    'i5 i6 i7 i8'
-    't5 t6 t7 t8';
-    gap: 10px; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25% 15% 25% 15%;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: 10px;
 }
 
-section img {
-    height: 100%;
+.image-container {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+    border-style: solid; 
+}
+
+.image-container img {
     width: 100%;
+    height: auto;
 }
 
-#image1 {
-    grid-area: i1;
-    object-fit: fill;
-    border-radius: 5px;
-}
-
-#image2 {
-    grid-area: i2;
-    object-fit: fill;
-    border-radius: 5px;
-}
-
-#image3 {
-    grid-area: i3;
-    object-fit: fill;
-    border-radius: 5px;
-}
-#image4 {
-    grid-area: i4;
-    object-fit: fill;
-    border-radius: 5px;
-}
-
-#image5 {
-    grid-area: i5;
-    object-fit: fill;
-    border-radius: 5px;
-}
-
-#image6 {
-    grid-area: i6;
-    object-fit: fill;
-    border-radius: 5px;
-}
-
-#image7 {
-    grid-area: i7;
-    object-fit: fill;
-    border-radius: 5px;
-}
-
-#image8 {
-    grid-area: i8;
-    object-fit: fill;
-    border-radius: 5px;
+.image-container h2 {
+    font-family: "Judson", sans-serif;
+    padding-left: 10px;
 }
 
 
 footer {
     grid-area: ft;
-    background: #e67e22;
+    background: lightgray;
 }
 

@@ -3,22 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodieFiesta- Home</title>
+    <title>FoodieFiesta- Hem</title>
     <link rel="stylesheet" href="css/style-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id ="container">
         <header><h1>FoodieFiesta</h1></header>
         <nav>
-            <a href="http://127.0.0.1:5500/recepies.html">Recepies</a>
-            <a href="http://127.0.0.1:5500/index.html">Home</a>
-            <a href="http://127.0.0.1:5500/event.html">Events</a>
+            <a href="http://127.0.0.1:5500/recepies.html">Recept</a>
+            <a href="http://127.0.0.1:5500/index.html" id="hem">Hem</a>
+            <a href="http://127.0.0.1:5500/event.html">Evenemang</a>
         </nav>
-        <aside>aside</aside>
-        <section>section</section>
-        <main>main</main>
-        <footer>footer</footer>
+        <aside>
+            <div class="restaurant-images">
+                <img src="img/stad_stockholm.jpg" alt="Stockholm restaurang">
+                <p>Västerlånggatan 23, 111 29 Stockholm</p>
+                <img src="img/stad_goteborg.jpg" alt="Göteborg restaurang">
+                <p>Kungsportsavenyn 45, 411 36 Göteborg</p>
+                <img src="img/stad_malmo.jpg" alt="Malmö restaurang">
+                <p>Södra Förstadsgatan 100, 214 20 Malmö</p>
+                <img src="img/stad_uppsala.jpg" alt="Uppsala restaurang">
+                <p>Storgatan 15, 753 31 Uppsala</p>
+                <img src="img/stad_linköping.jpg" alt="Linköping restaurang">
+                <p>Drottninggatan 26, 582 25 Linköping</p>
+            </div>
+        </aside>
+        <section><h2>Om oss</h2>
+            <p>Välkommen till FoodieFiesta! Vi är ett passionerat team som strävar efter att skapa de mest läckra och innovativa måltiderna för alla våra gäster. Vi fokuserar på färska, lokala råvaror och erbjuder en unik matupplevelse i varje rätt vi serverar.</p>
+            <h3>Våra Restauranger</h3>
+            <p>Vi har flera restauranger runt om i landet. Här kan du njuta av våra signaturrätter och uppleva en fantastisk atmosfär. Våra restauranger ligger i följande städer:</p>
+            <ul>
+                <li>Stockholm</li>
+                <li>Göteborg</li>
+                <li>Malmö</li>
+                <li>Uppsala</li>
+                <li>Linköping</li>
+            </ul>
+            <h3>Meny</h3>
+            <p>Våra restauranger erbjuder en varierad meny med allt från klassiska svenska rätter till internationella smaker, alltid tillagade med färska, lokala råvaror. Här hittar du både vegetariska alternativ, smakrika huvudrätter och utsökta desserter som passar alla smaker.</p>
+            <ul>
+                <h4>Förätter</h4>
+                <li>Rödbetstartar med chevré och valnötter- En klassisk kombination av smaker toppad med honung.</li>
+                <li>Krämig sparrissoppa- Serverad med färskt bröd och smör</li>
+                <li>Havskräftor med vitlöks- och persiljesmör- Grillade till perfektion.</li>
+                <h4>Huvudrätter</h4>
+                <li>Oxfilé med rödvinssås och potatisgratäng-En lyxig rätt med klassiska tillbehör.</li>
+                <li>Grillad lax med citron- och dillhollandaise- Serveras med sparris och mandelpotatis.</li>
+                <li>Vegetarisk risotto med svamp och tryffelolja- Krämig och full av smak.</li>
+                <li>Pulled pork-tacos med hemmagjord salsa- Ett trendigt och smakrikt alternativ.</li>
+                <li>Marockansk lammgryta med saffransris- Kryddig och värmande.</li>
+                <h4>Efterrätter</h4>
+                <li>Chokladfondant med vaniljglass- En drömmig chokladupplevelse.</li>
+                <li>Crème brûlée med smak av kardemumma- En klassiker med en svensk twist.</li>
+                <li>Hallonsorbet med färska bär- Fräscht och lätt.</li>
+                <h4>Drycker</h4>
+                <li>Husets röda vin- Ett fylligt vin som passar perfekt till kötträtter.</li>
+                <li>Alkoholfri äppelmust från lokala gårdar- En uppfriskande och naturlig dryck.</li>
+                <li>Margarita med färsk lime- För de som gillar en cocktail med sting.</li>
+                <li>Hemgjord ingefära- och citronlemonad- Uppfriskande och hälsosam.</li>
+            </ul>
+            <h3>Vår Historia</h3>
+            <p>FoodieFiesta startades för att ge matälskare en plats att njuta av både klassiska och moderna rätter. Vi började som ett litet bageri men har nu vuxit till att bli en kedja med flera restauranger runt om i landet. Vårt mål är att alltid överraska och inspirera våra kunder med nya smaker och kreativa menyer.</p>
+            <h3>Våra värderingar</h3>
+            <p>Vi är stolta över att vara ett företag som bryr sig om både våra kunder och vår planet. Här på FoodieFiesta strävar vi efter att använda hållbara råvaror, minska matsvinn och arbeta för en bättre framtid för alla.</p>
+            <p>Följ med oss på vår resa och var en del av vårt matäventyr!</p>
+            <h3>Besök oss</h3>
+            <p>Vi älskar när våra gäster kommer och delar sin passion för mat med oss. Våra restauranger är öppna alla dagar i veckan, och vi ser fram emot att välkomna dig!</p>
+            <a id="narmaste-restaurant" href="https://www.google.com/maps" target="_blank">Hitta vår närmaste restaurang här!</a>
+        </section>
+        <footer>
+            <div class="footer-section">
+                <p id="foodiefiesta-copyright">&copy; 2025 FoodieFiesta</p>
+            </div>
+                <div class="footer-section">
+                <h4>Kontakter</h4>
+                <ul>
+                    <li>Telefon: 0701-627453</li>
+                    <li>Telefon: 0789-353648</li>
+                    <li>Email: <a href="mailto:info@foodiefiesta.com">info@foodiefiesta.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Sociala medier</h4>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://tiktok.com">Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Prenumerera</h4>
+                <p>Få våra senaste recept direkt i din inkorg.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Din email" required>
+                    <button type="submit">Prenumerera</button>
+                </form>
+            </div>
+        </footer>
     </div>
-    
 </body>
 </html>

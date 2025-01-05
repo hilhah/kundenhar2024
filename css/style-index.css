@@ -1,5 +1,6 @@
 body {
-    background-color: #f5f5f5;
+    background-color: white;
+    font-family: "Judson", sans-serif;
 }
 
 #container {
@@ -9,25 +10,42 @@ body {
     'hd hd'
     'nav nav'
     'sec aside'
-    'main main'
     'ft ft';
     grid-template-columns: 70% 1fr;
-    grid-template-rows: 10rem 3rem 20rem 25rem 7rem;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 5px;
 }
 
 header {
     grid-area: hd;
-    background: pink;
+    background: #f3f3f3;
     display: flex;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-color: #e67e22;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: 5% 50%;
 
+}
+
+header h1 {
+    font-size: 5rem;    
+}
+
+h1 {
+    font-size: 4rem;
 }
 
 nav {
     grid-area: nav;
-    background: red;
+    background: white;
     display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -36,39 +54,103 @@ nav a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-color: #e67e22;
+    border-width: 1.5px;
 }
 
 nav a:hover {
-    background-color: blue;
-    color: darkgoldenrod;
+    background-color: #ccc;
+    color: black;
+}
+#hem {
+    background-color: #f3f3f3;
 }
 
 section {
-    grid-area: sec;
-    background: blue;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #e67e22;
+    padding: 1rem;
 }
 
 aside {
     grid-area: aside;
-    background: green;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    border-radius: 5px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: #e67e22;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}   
+
+ .restaurant-images img{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
 }
 
-main {
-    grid-area: main;
-    background: purple;
-    margin-bottom: 5px;
-    border-radius: 5px;
+.restaurant-images p {
+    padding-bottom: 2rem;
+    padding-left: 2.2rem;
+}
+
+#historia {
+    width:100%;
+    height:auto;
+    border-radius: 10px;
+}
+
+#narmaste-restaurant {
+    color: #e67e22;
+}
+
+#narmaste-restaurant:focus {
+    outline: none;
+}
+
+#narmaste-restaurant:hover {
+    color: #c97a1d;
 }
 
 footer {
     grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     background: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    border-top-style: solid;
+    border-color: #e67e22;
+    margin-top: 10px;
+}
 
+.footer-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #e67e22;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    color: #e67e22;
+}
+
+#foodiefiesta-copyright{
+    padding: 1.2rem;
+    padding-top: 4rem;
 }
